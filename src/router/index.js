@@ -1,5 +1,7 @@
-import Login from '@/views/login/index'
-import Index from '@/views/index/index'
+// import Login from '@/views/login/index'
+// import Index from '@/views/index/index'
+import Login from './../views/login/index'
+import Index from './../views/index/index'
 
 export const main = [
     {path: '/login',name: '登录',componentName:Login},
