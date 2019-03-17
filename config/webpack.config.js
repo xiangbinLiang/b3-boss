@@ -336,16 +336,7 @@ module.exports = function(webpackEnv) {
                 ),
                 
                 plugins: [
-                  [
-                    require.resolve('babel-plugin-named-asset-import'),
-                    {
-                      loaderMap: {
-                        svg: {
-                          ReactComponent: '@svgr/webpack?-svgo,+ref![path]',
-                        },
-                      },
-                    },
-                  ],
+                  ['import', { libraryName: 'antd', 'style': 'css' }],
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
